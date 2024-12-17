@@ -1,0 +1,174 @@
+[debug] [2024-12-17T10:01:31.980Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T10:01:31.982Z] Command:       /usr/local/bin/firebase /Users/manjitparmar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2024-12-17T10:01:31.983Z] CLI Version:   13.22.0
+[debug] [2024-12-17T10:01:31.983Z] Platform:      darwin
+[debug] [2024-12-17T10:01:31.984Z] Node Version:  v18.5.0
+[debug] [2024-12-17T10:01:31.985Z] Time:          Tue Dec 17 2024 15:31:31 GMT+0530 (India Standard Time)
+[debug] [2024-12-17T10:01:31.985Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T10:01:31.994Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-12-17T10:01:32.039Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T10:01:32.040Z] > authorizing via signed-in user (kartiksharmalbm0003@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/manjitparmar/Desktop/coffee
+
+[debug] [2024-12-17T10:01:32.762Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-12-17T10:01:32.766Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-12-17T10:02:11.354Z] Checked if tokens are valid: false, expires at: 1728472646444
+[debug] [2024-12-17T10:02:11.356Z] Checked if tokens are valid: false, expires at: 1728472646444
+[debug] [2024-12-17T10:02:11.356Z] > refreshing access token with scopes: []
+[debug] [2024-12-17T10:02:11.357Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-17T10:02:11.358Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-17T10:02:11.633Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-17T10:02:11.637Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-17T10:02:11.657Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-12-17T10:02:11.657Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"coffee","name":"coffee_demo"}
+[debug] [2024-12-17T10:02:13.393Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-12-17T10:02:13.393Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [display_name] has issue [project display name contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-12-17T10:02:13.608Z] FirebaseError: HTTP Error: 400, field [display_name] has issue [project display name contains invalid characters]
+    at responseToError (/Users/manjitparmar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/manjitparmar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-12-17T10:02:25.615Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T10:02:25.617Z] Command:       /usr/local/bin/firebase /Users/manjitparmar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2024-12-17T10:02:25.617Z] CLI Version:   13.22.0
+[debug] [2024-12-17T10:02:25.618Z] Platform:      darwin
+[debug] [2024-12-17T10:02:25.618Z] Node Version:  v18.5.0
+[debug] [2024-12-17T10:02:25.619Z] Time:          Tue Dec 17 2024 15:32:25 GMT+0530 (India Standard Time)
+[debug] [2024-12-17T10:02:25.619Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T10:02:25.631Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T10:02:25.632Z] > authorizing via signed-in user (kartiksharmalbm0003@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/manjitparmar/Desktop/coffee
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-12-17T10:03:02.601Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:02.603Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:02.606Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-12-17T10:03:02.608Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"coffeedemohosting","name":"coffeedemohosting"}
+[debug] [2024-12-17T10:03:05.212Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-12-17T10:03:05.215Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7758621115671941052"}
+[debug] [2024-12-17T10:03:05.217Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:05.219Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:05.220Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7758621115671941052 [none]
+[debug] [2024-12-17T10:03:07.039Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7758621115671941052 200
+[debug] [2024-12-17T10:03:07.040Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7758621115671941052 {"name":"operations/cp.7758621115671941052"}
+[debug] [2024-12-17T10:03:07.544Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-12-17T10:03:07.545Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:07.546Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:07.546Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7758621115671941052 [none]
+[debug] [2024-12-17T10:03:09.360Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7758621115671941052 200
+[debug] [2024-12-17T10:03:09.360Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7758621115671941052 {"name":"operations/cp.7758621115671941052","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"696857159507","projectId":"coffeedemohosting","lifecycleState":"ACTIVE","name":"coffeedemohosting","createTime":"2024-12-17T10:03:06.833406Z"}}
+[debug] [2024-12-17T10:03:09.364Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:09.364Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:09.365Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/coffeedemohosting:addFirebase [none]
+[debug] [2024-12-17T10:03:12.098Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/coffeedemohosting:addFirebase 200
+[debug] [2024-12-17T10:03:12.099Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/coffeedemohosting:addFirebase {"name":"operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl"}
+[debug] [2024-12-17T10:03:12.100Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:12.100Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:12.101Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl [none]
+[debug] [2024-12-17T10:03:13.350Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl 200
+[debug] [2024-12-17T10:03:13.351Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl {"name":"operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl"}
+[debug] [2024-12-17T10:03:13.853Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-12-17T10:03:13.855Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:13.856Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:13.857Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl [none]
+[debug] [2024-12-17T10:03:15.786Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl 200
+[debug] [2024-12-17T10:03:15.786Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl {"name":"operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl"}
+[debug] [2024-12-17T10:03:16.789Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-12-17T10:03:16.792Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:16.792Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:16.793Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl [none]
+[debug] [2024-12-17T10:03:17.860Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl 200
+[debug] [2024-12-17T10:03:17.861Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl {"name":"operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl"}
+[debug] [2024-12-17T10:03:19.863Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-12-17T10:03:19.866Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:19.867Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:19.867Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl [none]
+[debug] [2024-12-17T10:03:21.328Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl 200
+[debug] [2024-12-17T10:03:21.330Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl {"name":"operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl"}
+[debug] [2024-12-17T10:03:25.332Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-12-17T10:03:25.336Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:25.336Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:25.337Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl [none]
+[debug] [2024-12-17T10:03:26.716Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl 200
+[debug] [2024-12-17T10:03:26.717Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl {"name":"operations/workflows/NWVkOTk4MzQtYjc0Yy00MWJlLWE2MmUtZDg2ODAwZDRiMjVl","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"coffeedemohosting","projectNumber":"696857159507","displayName":"coffeedemohosting","name":"projects/coffeedemohosting","resources":{"hostingSite":"coffeedemohosting"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: coffeedemohosting
+[info]    - Project Name: coffeedemohosting
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/coffeedemohosting/overview
+[info] i  Using project coffeedemohosting (coffeedemohosting) 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-17T10:03:26.738Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:26.739Z] Checked if tokens are valid: true, expires at: 1734433330637
+[debug] [2024-12-17T10:03:26.739Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/coffeedemohosting [none]
+[debug] [2024-12-17T10:03:27.639Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/coffeedemohosting 200
+[debug] [2024-12-17T10:03:27.640Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/coffeedemohosting {"projectId":"coffeedemohosting","projectNumber":"696857159507","displayName":"coffeedemohosting","name":"projects/coffeedemohosting","resources":{"hostingSite":"coffeedemohosting"},"state":"ACTIVE","etag":"1_f3fb6981-8191-48f3-b9dd-8f63f1df8772"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote y/404.html 
+[debug] [2024-12-17T10:04:02.149Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-12-17T10:04:02.299Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-12-17T10:04:02.300Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.1.0","browserURL":"https://www.gstatic.com/firebasejs/11.1.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.1.0/firebase.tgz"},"live":{"version":"11.1","browserURL":"https://www.gstatic.com/firebasejs/live/11.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.1/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.1.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.1.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.1.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.1.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.1.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.1.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.1.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.1.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.1.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.1.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.1.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote y/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/manjitparmar/Desktop/coffee is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=584240111&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-17T10:04:08.344Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-12-17T10:04:08.347Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-12-17T10:04:08.811Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-12-17T10:04:08.813Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-12-17T10:04:08.835Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-12-17T10:04:09.324Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-12-17T10:04:09.324Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"kartikSharma0003","id":113338574,"node_id":"U_kgDOBsFozg","avatar_url":"https://avatars.githubusercontent.com/u/113338574?v=4","gravatar_id":"","url":"https://api.github.com/users/kartikSharma0003","html_url":"https://github.com/kartikSharma0003","followers_url":"https://api.github.com/users/kartikSharma0003/followers","following_url":"https://api.github.com/users/kartikSharma0003/following{/other_user}","gists_url":"https://api.github.com/users/kartikSharma0003/gists{/gist_id}","starred_url":"https://api.github.com/users/kartikSharma0003/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kartikSharma0003/subscriptions","organizations_url":"https://api.github.com/users/kartikSharma0003/orgs","repos_url":"https://api.github.com/users/kartikSharma0003/repos","events_url":"https://api.github.com/users/kartikSharma0003/events{/privacy}","received_events_url":"https://api.github.com/users/kartikSharma0003/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":3,"public_gists":0,"followers":0,"following":1,"created_at":"2022-09-12T08:03:47Z","updated_at":"2024-11-05T04:04:33Z","private_gists":0,"total_private_repos":8,"owned_private_repos":8,"disk_usage":198841,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as kartikSharma0003 
+[info] 
